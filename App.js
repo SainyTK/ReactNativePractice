@@ -1,26 +1,33 @@
 import React,{Component} from 'react';
-import {View,StyleSheet} from 'react-native';
+import {Image,View,StyleSheet,Text,ScrollView} from 'react-native';
+import BottomNav from './components/BottomNav'
 
 export default class App extends Component{
-  constructor(props){
-    super(props);
-  }
+    constructor(props){
+        super(props);
+    }
 
-  render(){
-    return(
-      <View style={styles.container}>
-
-      </View>
-    )
-  }
+    render(){
+        return (
+            <View style={styles.container}>
+                <View style={styles.bottomContainer}>
+                   <BottomNav/>
+                </View>
+              
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create(
-  {
-    container:{
-      marginTop:20,
-      flex:1,
-      flexDirection: 'row',
-    },
-  }
+    {
+        container:{
+          paddingTop:20,
+          flex:1,
+        },
+        bottomContainer:{
+          flex:1,
+          justifyContent:'flex-end'
+        }
+    }
 )

@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
-import {Image,View,StyleSheet,Text,ScrollView} from 'react-native';
-import BottomNav from './components/BottomNav'
+import {View,Text,StyleSheet} from 'react-native'
+import Instagram from './Projects/Instagram'
 
 export default class App extends Component{
     constructor(props){
@@ -9,12 +9,7 @@ export default class App extends Component{
 
     render(){
         return (
-            <View style={styles.container}>
-                <View style={styles.bottomContainer}>
-                   <BottomNav/>
-                </View>
-              
-            </View>
+            <Instagram/>
         );
     }
 }
@@ -25,9 +20,5 @@ const styles = StyleSheet.create(
           paddingTop:20,
           flex:1,
         },
-        bottomContainer:{
-          flex:1,
-          justifyContent:'flex-end'
-        }
     }
 )

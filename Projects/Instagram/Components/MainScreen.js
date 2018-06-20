@@ -12,10 +12,7 @@ import ProfileTab from './AppTabNavigator/ProfileTab'
 export default class MainScreen extends Component {
 
     static navigationOptions = {
-        titleStyle:{backgroundColor: 'red',width:'90%',},
-        headerLeft: <Icon style={{ paddingLeft: 10,}} name="ios-camera-outline" />,
-        title: <Text>Instagram</Text>,
-        headerRight: <Icon style={{ paddingRight: 10 }} name="ios-send-outline" />,
+        header:null,
     }
 
     render() {
@@ -57,5 +54,5 @@ const AppTabNavigator = createBottomTabNavigator({
         inactiveTintColor:'#d1cece',
         showLabel:false,
         showIcon:true,
-    }
-})
+    },
+});
